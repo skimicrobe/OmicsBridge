@@ -12,12 +12,16 @@ Contact the author at suyeonkim [at] unomaha.edu. This version has been tested f
 1. Feature selection is applied to the multi-omics dataset to extract relevant signatures.
    - Used Kruskal-Wallis test at two significant levels (p-values < 0.01 and 0.05) to identify significantly different features across groups(any phenotpye) for each omics data.
    - Applied to the significant features from the Kruskal-Wallis test to confirm pairwise differences through Pairwise Wilcoxon Tests.
+  
 2. Similarity network
-   - 
-2. kNN-based network
-   - 
-4. Finding a robust pathway which are enriched for captured co-occurring community 
-5. Easy to implement
+   - Distance matrix was used to calculate dissimilarity network, then convert to similarity network.
+   - This is required step for further clustering steps.
+  
+3. K-nearest neighbor (kNN)
+   - Determine _'k'_ for kNN network to refine the essential relationships.
+
+4. Ledien clustering
+  
 ----------------------------------------------------------------------
 ## Requirements
 Software R (Download from [here](https://www.r-project.org/) )
@@ -38,6 +42,7 @@ By incorporating all three omics layers, the final clusters are based on the col
 
 ## Input data  
 We provide the datasets that used in our mansucript! Please download the folder 'sampledata.zip' in the location you would like to use. 
+This examples of datasets went throughd data pre-processing steps, including, sample filtering, normalization, etc.
 ```
 unzip sampledata.zip 
 ```
@@ -45,3 +50,10 @@ unzip sampledata.zip
  1. `./sampledata/cooccurNetwork/`
  2. `./sampledata/ko/`
  3. `./sampledata/rawdata/`
+
+
+## Guides to R scripts 
+```
+Rscript step1_featureSelection.R
+```
+
