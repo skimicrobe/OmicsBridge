@@ -1,12 +1,11 @@
 # OmicsBridge
 
-OmicsBridge is a workflow for characterizing the multi-omics signatures in multi-level clusters from integrated multi-omics data. More generally, the multi-level clusters answers the question "What are the microbiome, enzyme, and metabolic signatures in the clusters that are associated with phenotype?" Furthermore, "which signatures are contributing to the enriched pathways in relation to phenotype?"
-
+OmicsBridge is a workflow designed to characterize multi-omics signatures within multi-level clusters derived from integrated multi-omics data. More broadly, these multi-level clusters address the question: "What are the microbiome, enzyme, and metabolic signatures within the clusters associated with a given phenotype?" Additionally, they help answer: "Which signatures contribute to the enriched pathways related to the phenotype?"
 
 This repository contains all the code and processed datsets necessary to reproduce the results
 Contact the author at suyeonkim [at] unomaha.edu. This version has been tested for OSX. 
 
-*Note: The work is currently in manuscript preparation.*
+*Note: This work is currently the process of manuscript preparation.*
 
 ----------------------------------------------------------------------
 ## Features 
