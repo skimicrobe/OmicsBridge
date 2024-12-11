@@ -6,7 +6,8 @@ OmicsBridge is a workflow for characterizing the multi-omics signatures in multi
 This repository contains all the code and processed datsets necessary to reproduce the results
 Contact the author at suyeonkim [at] unomaha.edu. This version has been tested for OSX. 
 
-Note: The work is currently in manuscript preparation.
+*Note: The work is currently in manuscript preparation.*
+
 ----------------------------------------------------------------------
 ## Features 
 1. Pathway-based profile based on species co-occurring community 
