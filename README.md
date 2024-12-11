@@ -18,7 +18,8 @@ Software R (Download from [here](https://www.r-project.org/) )
 
 ----------------------------------------------------------------------
 ## Workflows
-Our workflow contains three major steps: 
+Our workflow contains three major steps:
+
 Step 1. Feature Selection on omics data  
 Step 2. Identification of multi-level clusters
 Step 3. Multi-omics signatuer analysis
