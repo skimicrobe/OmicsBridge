@@ -24,7 +24,7 @@ Step 1. Feature Selection on omics data
 
 Step 2. Identification of multi-level clusters
 
-Step 3. Multi-omics signatuer analysis
+Step 3. Multi-omics signature analysis
 
 ### Main workflow
 ![Overview](https://github.com/skimicrobe/OmicsBridge/blob/main/OverviewWorkflow.png)
