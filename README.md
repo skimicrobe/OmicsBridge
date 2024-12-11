@@ -1,13 +1,12 @@
 # OmicsBridge
 
-We present a novel multi-level clustering approachto characeterize microbiome signatures using multi-omics data. Two clustering strategies are implemented to explore the influence of order of omics data in the integration process.
-By incorporating all three omics layers, the final clusters are based on the collective results from each-omics data type and are less prone to the biases inherent in single-omics analyses. 
+OmicsBridge is a workflow for characterizing the multi-omics signatures in multi-level clusters from integrated multi-omics data. More generally, the multi-level clusters answers the question "What are the microbiome, enzyme, and metabolic signatures in the clusters that are associated with phenotype?" Furthermore, "which signatures are contributing to the enriched pathways in relation to phenotype?"
+
 
 This repository contains all the code and processed datsets necessary to reproduce the results
 Contact the author at suyeonkim [at] unomaha.edu. This version has been tested for OSX. 
 
-Note: The manuscript is currently under-reviewed.
-
+Note: The work is currently in manuscript preparation.
 ----------------------------------------------------------------------
 ## Features 
 1. Pathway-based profile based on species co-occurring community 
@@ -19,10 +18,15 @@ Software R (Download from [here](https://www.r-project.org/) )
 
 ----------------------------------------------------------------------
 ## Workflows
-Our pipeline contains 4 major steps: (A) construct a species co-occurrence network from microbiome profile data; (B) Analyze the co-occurrence network at three granularity levels; (C) Perform pathway enrichment analysis; (D) Compare enriched pathways betweeen two IBD datasets in each sample from healthy/diseased status. An overview of the computational pipeline is shown in below. 
+Our workflow contains three major steps: 
+Step 1. Feature Selection on omics data  
+Step 2. Identification of multi-level clusters
+Step 3. Multi-omics signatuer analysis
 
 ### Main workflow
 ![Overview](https://github.com/skimicrobe/OmicsBridge/blob/main/OverviewWorkflow.png)
+We present a novel multi-level clustering approachto characeterize microbiome signatures using multi-omics data. Two clustering strategies are implemented to explore the influence of order of omics data in the integration process.
+By incorporating all three omics layers, the final clusters are based on the collective results from each-omics data type and are less prone to the biases inherent in single-omics analyses. 
 
 ## Input data  
 We provide the datasets that used in our mansucript! Please download the folder 'sampledata.zip' in the location you would like to use. 
