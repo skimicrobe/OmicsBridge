@@ -58,5 +58,4 @@ unzip sampledata.zip
 ```
 Rscript step1_featureSelection.R
 ```
-Input: ```Metagenome```
-
+Input: ```Any pre-processed omics data```
