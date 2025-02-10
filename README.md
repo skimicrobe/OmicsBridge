@@ -40,7 +40,7 @@ Our workflow contains three major steps:
 We present a novel multi-level clustering approach to characeterize microbiome-based signatures using multi-omics data. 
 
 ##
-#### 1. Feature Selection on omics data 
+#### Step 1. Feature Selection on omics data 
 You need to determine the significant features for each input data (meta-omics data or processed omics data) using Kruskal Wallis test among independent groups. 
 The significant features are determined using two levels of p-values (0.01 and 0.05). The following script is example script to conduct this step. 
 
@@ -51,7 +51,7 @@ _Input_: raw meta-omics abundance profile \
 _Output_: significant featured meta-omics abundance profile 
 
 ##
-#### 2. Identification of multi-level clusters 
+#### Step 2. Identification of multi-level clusters 
 To identify the multi-level clusters, we have several steps to reach our goal. 
 ##### 2-1. Calculating distance between samples for each omics data and then constructing sample-to-sample similarity network 
 First, the various distance metrics are used to calculate the distance between samples. Depending upon the data, the different metrics can be choosed. Here is the example of script for constructing similarity network.
@@ -70,7 +70,7 @@ Successive rounds of Ledien clustering, prepare using similairty matrices derive
 Note that this strategy is implemented with two strategies to explore the influence of data type order on the clustering outcomes. 
 By incorporating all three omics layers, the final clusters are based on the collective results from each-omics data type and are less prone to the biases inherentin single-omics analyses. 
 
-#### 3. Multi-omics signature analysis 
+#### Step 3. Multi-omics signature analysis 
 
 
 
