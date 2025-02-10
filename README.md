@@ -42,7 +42,7 @@ We present a novel multi-level clustering approach to characeterize microbiome-b
 ##
 #### 1. Feature Selection on omics data 
 You need to determine the significant features for each input data (meta-omics data or processed omics data) using Kruskal Wallis test among independent groups. 
-The significant features are determined using two levels of p-values (0.01 and 0.05). The following script is used to conduct this step. 
+The significant features are determined using two levels of p-values (0.01 and 0.05). The following script is example script to conduct this step. 
 
 ```
 Rscript step1_featureSelection.R
@@ -53,10 +53,18 @@ _Output_: significant featured meta-omics abundance profile
 ##
 #### 2. Identification of multi-level clusters 
 To identify the multi-level clusters, we have several steps to reach our goal. 
-##### 2-1. Calculating distance between samples for each omics data and then constructing dissimilarity network. 
-First, the various distance metrics are used to calculate the distance between samples. Depending upon the data, the different metrics was used. 
+##### 2-1. Calculating distance between samples for each omics data and then constructing similarity network 
+First, the various distance metrics are used to calculate the distance between samples. Depending upon the data, the different metrics can be choosed. Here is the example of script for constructing similarity network. 
 
+```
+Rscript step2_constructingNetwork.R
+```
+_Input_: significant featured meta-omics abundance profile \
+_Output_: matrix for similarity network 
 
+##### 2-2. Main integration analysis
+
+Before, we perform our proposed data integration analysis, we refine the similarity network using K-nearest neighbor algorithm. This step is mainly used for refining the essential relationships.
 
 
 
