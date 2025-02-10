@@ -53,8 +53,8 @@ _Output_: significant featured meta-omics abundance profile
 ##
 #### 2. Identification of multi-level clusters 
 To identify the multi-level clusters, we have several steps to reach our goal. 
-##### 2-1. Calculating distance between samples for each omics data and then constructing similarity network 
-First, the various distance metrics are used to calculate the distance between samples. Depending upon the data, the different metrics can be choosed. Here is the example of script for constructing similarity network. 
+##### 2-1. Calculating distance between samples for each omics data and then constructing sample-to-sample similarity network 
+First, the various distance metrics are used to calculate the distance between samples. Depending upon the data, the different metrics can be choosed. Here is the example of script for constructing similarity network.
 
 ```
 Rscript step2_constructingNetwork.R
@@ -62,20 +62,13 @@ Rscript step2_constructingNetwork.R
 _Input_: significant featured meta-omics abundance profile \
 _Output_: matrix for similarity network 
 
+##
 ##### 2-2. Main integration analysis
-
-Before, we perform our proposed data integration analysis, we refine the similarity network using K-nearest neighbor algorithm. This step is mainly used for refining the essential relationships.
-
-
-
-
-Then, the similarity network are constructed based on these filtered meta-omics profile. 
-
-
-First, significant features are Two clustering strategies are implemented to explore the influence of order of omics data in the integration process.
-
-
-By incorporating all three omics layers, the final clusters are based on the collective results from each-omics data type and are less prone to the biases inherent in single-omics analyses. 
+The goal of this data integration analysis is to identify the multi-level clusters. 
+The main strategy is first consturcting the weighted k-nearest neighbor (kNN) graph for the similarity matrix to retain the most relevant connections.
+Successive rounds of Ledien clustering, prepare using similairty matrices derived from different data types, allow this approach to iteratively refine sample groupings. 
+Note that this strategy is implemented with two strategies to explore the influence of data type order on the clustering outcomes. 
+By incorporating all three omics layers, the final clusters are based on the collective results from each-omics data type and are less prone to the biases inherentin single-omics analyses. 
 
 ## Input data  
 We provide the datasets that used in our mansucript! Please download the folder 'sampledata.zip' in the location you would like to use. 
