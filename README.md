@@ -1,7 +1,7 @@
-# OmicsBridge
+# Introduction
 
 OmicsBridge is a workflow designed to characterize multi-omics signatures within multi-level clusters derived from integrated multi-omics data. More broadly, these multi-level clusters address the question: "What are the microbiome, enzyme, and metabolic signatures within the clusters associated with a given phenotype?" Additionally, they help answer: "Which signatures contribute to the enriched pathways related to the phenotype?"
-This workflow can be applied in any domain of microbiome 
+This workflow can be applied in any domain of microbiome study. 
 This repository contains all the code and processed datsets necessary to reproduce the results
 Contact the author at suyeonkim [at] unomaha.edu. This version has been tested for OSX. 
 
@@ -34,10 +34,29 @@ Our workflow contains three major steps:
 2. Identification of multi-level clusters
 3. Multi-omics signature analysis
 
-### Main workflow
+### Getting Started:
 ![Overview](https://github.com/skimicrobe/OmicsBridge/blob/main/OverviewWorkflow.png)
 
-We present a novel multi-level clustering approachto characeterize microbiome signatures using multi-omics data. First, significant features are Two clustering strategies are implemented to explore the influence of order of omics data in the integration process.
+We present a novel multi-level clustering approach to characeterize microbiome-based signatures using multi-omics data. 
+
+#### Feature Selection on omics data 
+You need to determine the significant features for each input data (meta-omics data or processed omics data) using Kruskal Wallis test among independent groups. 
+The significant features are determined using two levels of p-values (0.01 and 0.05). The following script is used to conduct this step. 
+```
+Rscript step1_featureSelection.R
+```
+
+
+
+
+
+
+Then, the similarity network are constructed based on these filtered meta-omics profile. 
+
+
+First, significant features are Two clustering strategies are implemented to explore the influence of order of omics data in the integration process.
+
+
 By incorporating all three omics layers, the final clusters are based on the collective results from each-omics data type and are less prone to the biases inherent in single-omics analyses. 
 
 ## Input data  
