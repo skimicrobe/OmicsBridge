@@ -70,6 +70,10 @@ Successive rounds of Ledien clustering, prepare using similairty matrices derive
 Note that this strategy is implemented with two strategies to explore the influence of data type order on the clustering outcomes. 
 By incorporating all three omics layers, the final clusters are based on the collective results from each-omics data type and are less prone to the biases inherentin single-omics analyses. 
 
+#### 3. Multi-omics signature analysis 
+
+
+
 ## Input data  
 We provide the datasets that used in our mansucript! Please download the folder 'sampledata.zip' in the location you would like to use. 
 The example of datasets went throughd data pre-processing steps, including, sample filtering, normalization, etc.
