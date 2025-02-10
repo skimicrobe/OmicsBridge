@@ -42,9 +42,14 @@ We present a novel multi-level clustering approach to characeterize microbiome-b
 #### Feature Selection on omics data 
 You need to determine the significant features for each input data (meta-omics data or processed omics data) using Kruskal Wallis test among independent groups. 
 The significant features are determined using two levels of p-values (0.01 and 0.05). The following script is used to conduct this step. 
+
 ```
 Rscript step1_featureSelection.R
 ```
+_Input_: raw meta-omics abundance profile 
+_Output_: significant featured meta-omics abundance profile 
+
+####  
 
 
 
